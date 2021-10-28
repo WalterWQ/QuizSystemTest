@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/quiz.css" rel="stylesheet">
+    <script defer src="js/quiz.js"></script>
+    <title>Quiz</title>
+</head>
+  
+  <div class="bottomnav">
+      <p>Copyright Reserved</p>
+  </div>
+
+  <div class="topnav">
+    <a href="home.html">Home</a>  
+    <a href="spain.html">Spain</a>
+    <a href="germany.html">Germany</a>
+    <a href="russia.html">Russia</a>
+    <a href="quiz.html">Quiz</a>
+  </div>
+
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn hide">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div id="country-buttons" class="btn-grid">
+            <button class="country-btn" id="Moscow" onclick="moscowQuiz()">Moscow</button>
+            <button class="country-btn" id="UK" onclick="ukQuiz()">UK</button>
+            <button class="country-btn" id="USA" onclick="usaQuiz()">USA</button>
+            <button class="country-btn" id="Test" onclick="testQuiz()">Test</button>
+        </div>
+    </div>
+
+</body>
+</html>
